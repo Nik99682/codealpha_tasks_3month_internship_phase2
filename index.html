@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Social Network</h1>
+    <nav>
+      <a href="#" id="notifications-btn">🔔 Notifications</a>
+      <a href="#" id="friend-requests-btn">👥 Friend Requests</a>
+    </nav>
+  </header>
+
+  <section class="profile">
+    <img src="image.jpg" alt="Profile Picture" class="profile-pic" />
+    <h2 id="profile-name">nikhil choudhary</h2>
+  </section>
+
+  <section class="post-section">
+    <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+    <button id="post-btn">Post</button>
+  </section>
+
+  <section class="feed" id="feed">
+    <!-- Posts will be added here -->
+  </section>
+
+  <!-- Notifications Panel -->
+  <div id="notifications-panel" class="panel hidden">
+    <h3>Notifications</h3>
+    <ul id="notifications-list"></ul>
+    <button id="close-notifications">Close</button>
+  </div>
+
+  <!-- Friend Requests Panel -->
+  <div id="friend-requests-panel" class="panel hidden">
+    <h3>Friend Requests</h3>
+    <ul id="friend-requests-list">
+      <li>Alex Brown <button class="accept-btn">Accept</button></li>
+      <li>Lisa Green <button class="accept-btn">Accept</button></li>
+    </ul>
+    <button id="close-requests">Close</button>
+  </div>
+
+<ul class="friend-list">
+  <li class="friend" data-name="nikhil choudhary">Jane Smith</li>
+  <li class="friend" data-name="ashok bhaiya">Mike Johnson</li>
+</ul>
+
+  <!-- Chat Popup -->
+  <!-- Container to hold multiple chat popups -->
+<div id="chat-container"></div>
+
+
+  <section class="friends">
+    <h3>Friends</h3>
+    <ul class="friend-list">
+      <li id="open-chat">nikhil choudhary</li>
+      <li>amit jat</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
